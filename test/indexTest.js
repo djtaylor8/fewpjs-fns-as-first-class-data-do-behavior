@@ -15,6 +15,7 @@ describe("index.js", () => {
     it("updates the DOM with an appropriate message", () => {
       let testContent = "TEST";
       displayMessage(testContent);
+      let greetingEl = document.getElementById('greeting')
 
       // The test library doesn't treat innerText and textContent the same, so we need to check for both
       // https://github.com/jsdom/jsdom/issues/1245
